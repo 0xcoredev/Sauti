@@ -20,7 +20,7 @@ const SEND_KEYWORDS = /\b(send|tuma|transfer|sends?|pay)\b/i;
 const AMOUNT_PATTERN = /\b(\d+(?:\.\d+)?)\s*(musd|usd|dollars?|cedis?|naira|shillings?)?\b/i;
 const RECIPIENT_KEYWORD = /\b(to|kwa|for)\s+/i;
 const ADDRESS_PATTERN = /\b(0x[a-fA-F0-9]{40})\b/;
-const ENS_PATTERN = /\b([a-z0-9-]+\.[a-z0-9-]+)\b/i;
+const ENS_PATTERN = /\b([a-z0-9-]+(?:\.[a-z0-9-]+)+)\b/i;
 
 export function parseVoiceCommand(transcript: string): RemittanceIntent {
   const text = transcript.trim();
