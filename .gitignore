@@ -1,0 +1,14 @@
+node_modules/
+dist/
+cache/
+artifacts/
+typechain-types/
+.next/
+.env
+.env.local
+.DS_Store
+coverage/
+*.log
+packages/hardhat/cache/
+packages/hardhat/artifacts/
+packages/nextjs/.next/

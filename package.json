@@ -1,0 +1,36 @@
+{
+  "name": "sauti",
+  "version": "0.1.0",
+  "description": "Sauti — voice-powered MUSD remittances on Mezo. Built for the Mezo Buildathon.",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "chain": "echo 'Use Mezo testnet faucet: https://faucet.test.mezo.org/' && exit 0",
+    "compile": "yarn workspace @sauti/hardhat compile",
+    "test": "yarn workspace @sauti/hardhat test",
+    "deploy:mezo": "yarn workspace @sauti/hardhat deploy:mezo",
+    "deploy:mocks": "yarn workspace @sauti/hardhat run scripts/deploy-mocks.ts --network hardhat",
+    "dev": "yarn workspace @sauti/nextjs dev",
+    "build": "yarn workspace @sauti/nextjs build",
+    "start": "yarn workspace @sauti/nextjs start",
+    "lint": "yarn workspace @sauti/hardhat lint && yarn workspace @sauti/nextjs lint"
+  },
+  "engines": {
+    "node": ">=20.18.3"
+  },
+  "keywords": [
+    "mezo",
+    "musd",
+    "mezo-token",
+    "bitcoin",
+    "evm",
+    "solidity",
+    "voice",
+    "remittance",
+    "africa",
+    "defi"
+  ]
+}
